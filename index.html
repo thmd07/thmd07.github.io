@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guías rápidas de Productividad para freelancers — FreelanceFlow</title>
+  <meta name="description" content="Guías prácticas y accionables para freelancers que quieren ser más productivos y ganar más tiempo libre." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Guías rápidas de Productividad para freelancers - FreelanceFlow" />
+  <meta property="og:description" content="Guías prácticas para freelancers: técnicas, plantillas y checklists que funcionan hoy." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root { --accent:#0b74de; --bg:#f7f9fc; --text:#1b1b1b; }
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+    header{background:white;padding:20px 16px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+    .container{max-width:900px;margin:24px auto;padding:0 16px}
+    h1{font-size:1.6rem;margin:8px 0}
+    .hero{display:grid;gap:12px}
+    .cta{display:inline-block;background:var(--accent);color:white;padding:10px 14px;border-radius:8px;text-decoration:none}
+    .card{background:white;padding:16px;border-radius:10px;box-shadow:0 6px 20px rgba(11,11,11,.04);margin-bottom:16px}
+    nav a{margin-right:12px;text-decoration:none;color:#333}
+    footer{padding:24px 0;color:#555;text-align:center;font-size:.9rem}
+    .muted{color:#6b7280;font-size:.95rem}
+    form input, form button{width:100%;padding:10px;margin-top:8px;border-radius:8px;border:1px solid #e6e9ee}
+    form button{background:var(--accent);color:white;border:none;cursor:pointer}
+    @media(min-width:700px){h1{font-size:2rem}.hero{grid-template-columns:1fr 320px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav><a href="/">Inicio</a> <a href="/about.html">Sobre mí</a> <a href="/posts/">Artículos</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div>
+        <h1>Guías prácticas para Productividad para freelancers</h1>
+        <p class="muted">Publico 1 guía semanal que te ayuda a lograr más en menos tiempo, eliminar distracciones y cobrar mejor por tu trabajo.</p>
+        <p><a class="cta" href="#subscribe">Suscríbete gratis</a></p>
+      </div>
+      <aside>
+        <div class="card" id="subscribe">
+          <strong>Recibe lo mejor en tu correo</strong>
+          <p class="muted">Plantillas, checklists y la mejor guía semanal para freelancers.</p>
+
+          <!-- === FORMULARIO DE SUSCRIPCIÓN ===
+               Opciones:
+               A) Si usas MailerLite: pega aquí el "embed code" que MailerLite te proporciona.
+                  Reemplaza TODO el bloque <form ...> por el código que MailerLite te da.
+               B) Mientras no tengas el embed, usa este formulario simple y luego reemplaza el atributo action
+                  por la URL que MailerLite (o tu proveedor) te indique.
+               ======================================================= -->
+          <form id="simple-subscribe" method="post" action="REEMPLAZA_POR_LA_URL_DE_MAILERLITE_O_TU_WEBHOOK">
+            <label for="name">Nombre (opcional)</label>
+            <input id="name" name="name" placeholder="Tu nombre" />
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" placeholder="tu@correo.com" required />
+            <button type="submit">Suscribirme gratis</button>
+            <p class="muted" style="font-size:0.85rem;margin-top:8px">Al suscribirte recibirás 1 correo semanal. Puedes darte de baja cuando quieras.</p>
+          </form>
+          <!-- ======================================================= -->
+        </div>
+
+        <div class="card">
+          <strong>Lo más leído</strong>
+          <ul>
+            <li><a href="/posts/organiza-dia-15min.html">Cómo organizar tu día en 15 minutos</a></li>
+            <li><a href="/posts/plan-tarifas-freelance.html">Plantilla para fijar tarifas que enamoran</a></li>
+            <li><a href="/posts/automatiza-tareas-repetitivas.html">Automatiza tareas repetitivas sin ser programador</a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Últimas guías</h2>
+        <!-- Lista de posts (vincula archivos HTML en /posts/) -->
+        <article>
+          <a href="/posts/organiza-dia-15min.html"><h3>Cómo organizar tu día en 15 minutos</h3></a>
+          <p class="muted">Técnica simple para priorizar tareas y evitar sobrecarga. Tiempo de lectura: 4 minutos.</p>
+        </article>
+
+        <article>
+          <a href="/posts/plantilla-brief-cliente.html"><h3>Brief para clientes: plantilla editable</h3></a>
+          <p class="muted">Una plantilla que te hará cobrar más y evitar revisiones infinitas. Tiempo de lectura: 3 minutos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Sobre FreelanceFlow</h2>
+      <p>Soy Taha, creador de FreelanceFlow. Ayudo a freelancers a organizar su trabajo, automatizar tareas y cobrar mejor. Aquí comparto plantillas y guías prácticas que uso con mis clientes.</p>
+      <p class="muted">Si quieres colaborar o preguntar algo, responde al correo de bienvenida cuando te suscribas.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> FreelanceFlow — Hecho con ❤️.
+      <div style="margin-top:8px;font-size:0.9rem;color:#6b7280">Política de privacidad • Aviso legal</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Ejemplo: reemplaza el comportamiento formulario por defecto si quieres testear sin backend
+    // Comenta o elimina este script cuando pongas la acción real de MailerLite.
+    (function(){
+      var f = document.getElementById('simple-subscribe');
+      if(!f) return;
+      f.addEventListener('submit', function(e){
+        var action = f.getAttribute('action');
+        if(!action || action.includes('REEMPLAZA_POR_LA_URL')){
+          e.preventDefault();
+          alert('Formulario de prueba: reemplaza el atributo action por la URL de MailerLite o tu webhook para que el correo se guarde realmente.');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
+
